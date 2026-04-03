@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/app.js",
-    "dev": "nodemon ./src/app.js",
-    "db:reset": "node ./scripts/db-reset.js",
-    "db:reset:no-undo": "node ./scripts/db-reset.js --no-undo",
-    "db:reset:skip-seed": "node ./scripts/db-reset.js --skip-seed",
-    "role:set": "node ./scripts/set-user-role.js",
-    "role:addOrganizer": "node ./scripts/add-organizer-role.js",
-    "db:migrate": "npx sequelize-cli db:migrate --migrations-path src/migrations --models-path src/models",
-    "db:seed": "npx sequelize-cli db:seed:all --seeders-path src/seeders --models-path src/models",
-    "db:migrate:undo": "npx sequelize-cli db:migrate:undo --migrations-path src/migrations --models-path src/models"
+    "dev": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
